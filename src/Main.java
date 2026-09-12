@@ -5,9 +5,9 @@ void main() {
     // Задача № 1
     int firstFriday = 5;
 
-    for (; firstFriday <= 31; firstFriday++) {
-        if (firstFriday % 7 == 0) {
-            System.out.println("Сегодня пятница, " + firstFriday + "-е число. Необходимо подготовить отчет");
+    for (int day = 1; day <= 31; day++) {
+        if (day >= firstFriday && (day - firstFriday) % 7 == 0) {
+            System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
         }
     }
 
